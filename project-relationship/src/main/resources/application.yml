@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /relationship
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/family?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+        
