@@ -9,15 +9,15 @@ import co.com.family.relationship.request.AuditoriaRequest;
 public class AuditoriaAdapter {
   
   public AuditoriaEntity getAuditoriaEntity(AuditoriaRequest auditoriaRequest) throws Exception {
-    AuditoriaEntity auditoriaEntity= new AuditoriaEntity();
-    auditoriaEntity.setFechaTransac(new Date());
-    auditoriaEntity.setNombreTabla(auditoriaRequest.getNombreTabla());
-    auditoriaEntity.setEvento(auditoriaRequest.getEvento());
-    auditoriaEntity.setParamEntrada(auditoriaRequest.getParamEntrada());
-    auditoriaEntity.setValueNew(auditoriaRequest.getValueNew());
-    auditoriaEntity.setValueOld(auditoriaRequest.getValueOld());
-    auditoriaEntity.setRespuestaTransac(auditoriaRequest.getRespuestaTransac());
-    return auditoriaEntity;
+       AuditoriaEntity auditoriaEntity= new AuditoriaEntity();
+       auditoriaEntity.setFechaTransac(new Date());
+		auditoriaEntity.setNombreTabla(auditoriaRequest.getNombreTabla());
+		auditoriaEntity.setEvento(auditoriaRequest.getEvento());
+		auditoriaEntity.setParamEntrada(auditoriaRequest.getParamEntrada());
+		auditoriaEntity.setValueNew(auditoriaRequest.getValueNew());
+		auditoriaEntity.setValueOld(auditoriaRequest.getValueOld());
+		auditoriaEntity.setRespuestaTransac(auditoriaRequest.getRespuestaTransac());
+		return auditoriaEntity;
     
   }
 
